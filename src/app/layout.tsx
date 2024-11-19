@@ -1,16 +1,28 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import AppHeader from "@/components/AppHeader/AppHeader";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const poppinsFont = localFont({
+  src: [
+    {
+      path: "./fonts/Poppins-Regular.woff",
+      weight: "400",
+    },
+    {
+      path: "./fonts/Poppins-Medium.woff",
+      weight: "500",
+    },
+    {
+      path: "./fonts/Poppins-SemiBold.woff",
+      weight: "600",
+    },
+    {
+      path: "./fonts/Poppins-Bold.woff",
+      weight: "700",
+    },
+  ],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +37,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${poppinsFont.variable} antialiased`}>
+        <AppHeader />
         {children}
       </body>
     </html>

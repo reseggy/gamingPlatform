@@ -1,0 +1,52 @@
+.link {
+  position: relative;
+  color: var(--text-color);
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: #dc7000;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  left: 0px;
+  bottom: -7px;
+  width: 0;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.activeLink {
+  position: relative;
+  color: var(--text-color);
+}
+
+.activeLink::before,
+.activeLink::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background-color: #dc7000;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.activeLink::before {
+  left: -14px;
+  bottom: -7px;
+  width: 31px;
+}
+
+.activeLink::after {
+  left: 19px;
+  bottom: -7px;
+  width: 5px;
+}
+
+.activeLink:hover::before,
+.activeLink:hover::after {
+  width: 31px;
+}
