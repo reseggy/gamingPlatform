@@ -13,7 +13,7 @@ export default function AppHeader() {
   };
 
   return (
-    <header className="flex justify-between pt-[37px] px-[55px] items-center">
+    <header className="flex justify-between pt-[37px] px-[55px] items-center w-[100%]">
       <Link href="/">
         <Image src="/logo.svg" alt="Next.js" width={82} height={45} />
       </Link>
@@ -41,9 +41,13 @@ export default function AppHeader() {
             </Link>
           </li>
         </ul>
-        <button className="bg-[#fa9021] hover:bg-[#ffa84b] active:bg-[#fa9f3d] rounded-md py-[10px] px-[28px] text-[var(--text-color)] font-normal text-[13px] leading-5 ">
+
+        <Link
+          href="/contact-us"
+          className="bg-[var(--button-bg)] hover:bg-[var(--button-bg-hover)] active:bg-[var(--button-bg-active)] rounded-md py-[10px] px-[28px] text-[var(--text-color)] text-center font-normal text-[13px] leading-5"
+        >
           Contact us
-        </button>
+        </Link>
       </nav>
     </header>
   );

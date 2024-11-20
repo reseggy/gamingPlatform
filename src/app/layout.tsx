@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import AppHeader from "@/components/AppHeader/AppHeader";
 
 const poppinsFont = localFont({
   src: [
@@ -37,8 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppinsFont.variable} antialiased`}>
-        <AppHeader />
+      <body
+        className={`${poppinsFont.variable} antialiased flex flex-col gap-[121px] items-center`}
+      >
         {children}
       </body>
     </html>

@@ -6,6 +6,10 @@
   --background: #ffffff;
   --foreground: #171717;
   --text-color: #ffffff;
+  --main-color: #dc7000;
+  --button-bg: #fa9021;
+  --button-bg-hover: #ffa84b;
+  --button-bg-active: #fa9f3d;
 }
 
 @media (prefers-color-scheme: dark) {

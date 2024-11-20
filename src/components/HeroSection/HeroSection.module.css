@@ -1,0 +1,24 @@
+.buttonCustom {
+  background: linear-gradient(
+    112.96deg,
+    rgb(250, 131, 5) 1.518%,
+    rgb(251, 158, 60) 117.454%
+  );
+}
+
+.buttonCustom:hover {
+  background: var(--button-bg-hover);
+}
+
+.buttonCustom:active {
+  background: var(--button-bg-active);
+}
+
+.bgMultiple {
+  background-image: url("@assets/photos/unity.png"),
+    url("@assets/photos/cryengine.png"), url("@assets/photos/unrealengine.png");
+  background-position: left 649px top 206px, left 828px top,
+    left 1168px top 15px;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
