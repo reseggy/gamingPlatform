@@ -10,6 +10,8 @@
   --button-bg: #fa9021;
   --button-bg-hover: #ffa84b;
   --button-bg-active: #fa9f3d;
+  --font-poppins: "Poppins", sans-serif;
+  --font-rubik: "Rubik", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +25,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-poppins), sans-serif;
+}
+
+.rubik-font {
+  font-family: var(--font-rubik), sans-serif;
 }
