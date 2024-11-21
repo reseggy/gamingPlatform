@@ -13,16 +13,16 @@ const TrandingGames: FC<TrandingGamesProps> = ({ items }) => {
   };
 
   return (
-    <section className="min-w-[1170px] mx-auto flex flex-col gap-[57px]">
+    <section className="min-w-[1170px] mx-auto flex flex-col gap-[57px] text-[var(--text-color)]">
       <div className="flex justify-between items-center">
         <h2 className="rubik-font text-[31px] font-bold leading-[58px]">
           Currently Trending Games
         </h2>
         <button
           onClick={handleToggle}
-          className="w-[140px] py-[10px] bg-[#FFFFFF1C] hover:bg-[#ffffff1f] active:bg-[#ffffff2a] rounded-[10px]"
+          className="w-[140px] py-[10px] bg-[#FFFFFF1C] hover:bg-[#ffffff1f] active:bg-[#ffffff2a] rounded-[10px] rubik-font uppercase text-[20px] font-normal"
         >
-          {showAll ? "Show less" : "Show all"}
+          {showAll ? "See less" : "See all"}
         </button>
       </div>
       <div className="max-w-[1170px] flex justify-between flex-wrap gap-y-[20px]">

@@ -7,7 +7,7 @@ const ItemTradingGame: FC<{
   followers: number;
 }> = ({ image, followers }) => {
   return (
-    <div className="max-w-[251px] flex flex-col gap-[25px]">
+    <div className="max-w-[251px] flex flex-col gap-[25px] text-[var(--text-color)]">
       <Image
         src={image}
         alt="game preview"
